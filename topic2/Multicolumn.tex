@@ -1,0 +1,17 @@
+%\documentclass[twocolumn]{article}
+\documentclass{article}
+\usepackage{lipsum}
+\usepackage{multicol}
+\begin{document}
+	\setlength{\columnsep}{20pt} % Space among columns
+	\setlength{\columnseprule}{3pt} % add a line sep
+	\begin{multicols}{3}
+		\lipsum[1-14]
+	\end{multicols}
+	\lipsum[1-14]
+	\begin{multicols}{2}
+		\lipsum[1-2]
+		\columnbreak
+		\lipsum[3-4]
+	\end{multicols}
+\end{document}
