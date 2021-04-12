@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{arydshln}
+\begin{document}
+	
+	\begin{tabular}{|c|l|l|r|}
+		\hline
+		No. & Item & Price & Qty\\
+		\hline
+		1 & Pen & 10 & 2\\
+		\hline
+		2 & Pencil & 5 & 3\\
+		\hline
+		3 & Writing pad & 1540 & 1\\
+		\hline
+	\end{tabular}
+
+	\begin{tabular}{|c|l|c|r|}
+		\hline
+		No. & Item & Price & Qty\\
+		\hline
+		1 & Pen & 10 & 2\\
+		\hline
+		2 & Pencil & 2 & 3\\
+		\cline{1-2} \cline{4-4}
+		3 & Writing pad &  & 1\\
+		\hline
+	\end{tabular}
+
+	\begin{tabular}{:c:l:c:r:}
+		\hdashline[3pt/5pt]
+		No. & Item & Price & Qty\\
+		\hdashline[3pt/5pt]
+		1 & Pen & 10 & 2\\
+		\hdashline[3pt/5pt]
+		2 & Pencil & 2 & 3\\
+		\cdashline{1-2}[3pt/5pt] \cdashline{4-4}[3pt/5pt]
+		3 & Writing pad &  & 1\\
+		\hline
+	\end{tabular}
+	
+\end{document}

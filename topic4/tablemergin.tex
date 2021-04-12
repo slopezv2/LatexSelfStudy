@@ -1,0 +1,45 @@
+\documentclass{article}
+\usepackage{multirow}
+\begin{document}
+	\renewcommand{\arraystretch}{1.5} % vertical spacing 
+	\begin{tabular}{|c|l|c|r|}
+		\hline
+		No. & Item & Price & Qty\\
+		\hline
+		1 & Pen & 10 & 2\\
+		\hline
+		2 & Pencil & \multirow{2}{*}{2} & 3\\
+		\cline{1-2} \cline{4-4}
+		3 & Writing pad &  & 1\\
+		\hline
+	\end{tabular}
+
+	\begin{tabular}{|c|l|c|r|}
+		\hline
+		\multicolumn{4}{|c|}{Stationary Item} \\
+		\hline
+		No. & Item & Price & Qty\\
+		\hline
+		1 & Pen & 10 & 2\\
+		\hline
+		2 & Pencil & \multirow{2}{*}{2} & 3\\
+		\cline{1-2} \cline{4-4}
+		3 & Writing pad &  & 1\\
+		\hline
+	\end{tabular}
+
+	\begin{tabular}{|c|l|c|r|c|l|c|r|c|l|c|r|c|l|c|r|}
+		\hline
+		\multicolumn{4}{|c|}{Stationary Item} \\
+		\hline
+		No. & Item & Price & Qty & No. & Item & Price & Qty& No. & Item & Price & Qty & No. & Item & Price & Qty\\
+		\hline
+		1 & Pen & 10 & 2\\
+		\hline
+		2 & Pencil & \multirow{2}{*}{2} & 3\\
+		\cline{1-2} \cline{4-4}
+		3 & Writing pad &  & 1\\
+		\hline
+	\end{tabular}
+
+\end{document}

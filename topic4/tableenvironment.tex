@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{lipsum}
+\begin{document}
+	\tableofcontents
+	\listoftables
+	
+	\section{one}
+	\lipsum[1-2]
+	
+	\begin{table}
+		\centering
+		\begin{tabular}{|l|l|}
+			\hline
+			No. & Item\\
+			\hline
+			1 & Pen\\
+			\hline
+			2 & Pencil\\
+			\hline
+			3 & Scale\\
+			\hline
+		\end{tabular}
+		\caption{Stationery Items}
+	\end{table}
+
+	\begin{table}[h] %Force position
+		\centering
+		\begin{tabular}{|l|l|}
+			\hline
+			No. & Item\\
+			\hline
+			1 & Pen\\
+			\hline
+			2 & Pencil\\
+			\hline
+			3 & Scale\\
+			\hline
+		\end{tabular}
+		\caption{Stationery Items}
+	\end{table}
+
+	\begin{table}[b] %Force position to bottom
+		\centering
+		\begin{tabular}{|l|l|}
+			\hline
+			No. & Item\\
+			\hline
+			1 & Pen\\
+			\hline
+			2 & Pencil\\
+			\hline
+			3 & Scale\\
+			\hline
+		\end{tabular}
+		\caption{Stationery Items}
+	\end{table}
+
+
+\end{document}

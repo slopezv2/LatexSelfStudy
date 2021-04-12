@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{graphicx}
+\begin{document}
+
+
+	\listoffigures
+	
+	\setlength{\fboxsep}{15pt}
+	
+	content
+	\fbox{\includegraphics[height=3cm]{aage.jpg}}
+	
+	\setlength{\fboxrule}{4pt}
+	\fbox{\includegraphics[height=2cm]{aage.jpg}}
+	
+	%Cropped version
+	\includegraphics[clip=true, trim=15mm 5mm 7mm 3mm]{aage.jpg}
+	% Rotated
+	\includegraphics[angle=170]{aage.jpg}
+	
+	\begin{figure}[h]
+		\centering
+		\caption{Age Of empires 2 Definitive Edition}
+		\includegraphics[height=2cm]{aage.jpg}
+	\end{figure}
+\end{document}
