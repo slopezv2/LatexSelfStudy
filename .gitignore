@@ -11,3 +11,5 @@
 *.lof
 *.bbl
 *.blg
+*.snm
+*.nav
